@@ -9,8 +9,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: rgb(255,248,248);
-  background: linear-gradient(0deg, rgba(255,248,248,1) 0%, rgba(255,125,132,1) 100%);
+  background: rgba(255, 125, 132, 1) !important;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

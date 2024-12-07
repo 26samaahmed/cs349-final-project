@@ -15,7 +15,7 @@ function Navbar() {
           <div key={index}>
               <Link 
                 to={item.path} 
-                className="text-white hover:text-[#C72D2D]"
+                className="text-white hover:text-[#C72D2D] no-underline hover:underline"
               >
                 {item.text}
               </Link>
