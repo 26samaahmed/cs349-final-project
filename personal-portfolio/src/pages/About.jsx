@@ -1,6 +1,6 @@
 import Resume from '../assets/Sama_Ahmed_2024_Resume.pdf';
 
-function AboutPage() {
+function About() {
   return (
     <div className="text-[#C72D2D] text-left bg-[#FCC1C1] opacity-65 p-10 rounded-md">
       <h1 className="text-4xl underline mb-10">About Me</h1>
@@ -11,9 +11,58 @@ function AboutPage() {
         and I’m always eager to learn and explore new areas in tech</p>
 
       {/* link resume */}
-      <p className='text-xl'>Check my Resume <a href={Resume} target="_blank" rel="noreferrer" className='text-white underline'>here</a></p>
+      <p className='text-2xl text-right font-medium'>Check my Resume <a href={Resume} target="_blank" rel="noreferrer" className='text-white underline'>Here</a></p>
     </div>
   );
 }
 
-export default AboutPage;
+function Interests() {
+  const interests = [ 'Web Development', 'UI/UX Design', 'Web Design'];
+  return (
+    <div className='m-10'>
+      <h1 className="text-4xl underline mb-10 text-left text-[#C72D2D]">Interests</h1>
+      <ul className="flex flex-wrap gap-5 text-2xl">
+        {interests.map((interest, index) => (
+          <li
+            key={index}
+            className="bg-white text-sm text-[#C72D2D] rounded-full w-36 p-1 text-center"
+          >
+            {interest}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Skills() {
+  const skills = ['HTML/CSS', 'JavaScript', 'React', 'Svelte/SvelteKit', 'Python', 'Flask', 'C/C++', 'Git', 'Figma'];
+  return (
+    <div className='m-10'>
+      <h1 className="text-4xl underline mb-10 text-left text-[#C72D2D]">Skills</h1>
+      <ul className="flex flex-wrap gap-5 text-2xl">
+        {skills.map((skill, index) => (
+          <li
+            key={index}
+            className="bg-white text-sm text-[#C72D2D] rounded-full w-36 p-1 text-center"
+          >
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Main(){
+  return (
+    <div>
+      <About />
+      <Interests />
+      {/*Add a faint line to seperate the sections*/}
+      <hr className='w-3/4 m-auto mt-10 mb-10 opacity-70'/>
+      <Skills />
+    </div>
+  );
+}
+export default Main;
