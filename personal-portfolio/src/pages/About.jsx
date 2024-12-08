@@ -7,7 +7,7 @@ function About() {
         I moved to the U.S. five years ago, and though I started college with no coding experience, 
         I quickly developed a passion for technology through involvement in clubs like ACM. 
         I’m particularly interested in front-end development, UI/UX design, and web design, 
-        and I’m always eager to learn and explore new areas in tech</p>
+        and I’m always eager to learn and explore new areas in tech.</p>
 
       {/* link resume */}
       <p className='text-md md:text-2xl text-left font-medium'><a href={Resume} target="_blank" rel="noreferrer" className='text-white hover:text-[#C72D2D] underline transition-all duration-300 ease-in-out'>Check my Resume Here</a></p>
