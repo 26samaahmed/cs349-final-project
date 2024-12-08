@@ -48,24 +48,24 @@ function ProjectDetails() {
   const project = projectData[projectId]; // Get the project data based on the projectId
 
   return (
-    <div className="text-[#C72D2D] bg-[#FCC1C1] p-5 rounded-md m-10 w-auto text-left">
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-4xl mb-4">{project.name}</h1>
+    <div className="text-[#C72D2D]  bg-[#FCC1C1] p-5 rounded-md m-1 mb-5 md:m-10 w-auto text-left">
+      <div className="flex flex-col md:flex-row md:justify-between items-start mb-4">
+        <h1 className="text-xl md:text-4xl mb-4">{project.name}</h1>
         <ul className="flex flex-wrap gap-5 mb-4">
           {project.skills.map((skill, index) => (
             <li
               key={index}
-              className="bg-white text-sm text-[#C72D2D] rounded-full w-36 p-1 text-center"
+              className="bg-white text-sm text-[#C72D2D] rounded-full w-24 md:w-36 p-1 text-center"
             >
               {skill}
             </li>
           ))}
         </ul>
       </div>
-      <p className="text-xl mb-4"><span className="font-semibold underline">Description</span>: {project.description}</p>
-      <p className="text-lg mb-4"><span className="font-semibold underline">Challenges</span>: {project.challenges}</p>
-      <p className="text-lg mb-4"><span className="font-semibold underline">Outcome</span>: {project.outcome}</p>
-      <div className="text-lg mb-4">
+      <p className="text-sm md:text-lg mb-4"><span className="font-semibold underline">Description</span>: {project.description}</p>
+      <p className="text-sm md:text-lg mb-4"><span className="font-semibold underline">Challenges</span>: {project.challenges}</p>
+      <p className="text-sm md:text-lg mb-4"><span className="font-semibold underline">Outcome</span>: {project.outcome}</p>
+      <div className="text-sm md:text-lg mb-4">
         <a href={project.url} target="_blank" rel="noreferrer" className="font-semibold underline text-[#C72D2D]">Project Link</a>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
