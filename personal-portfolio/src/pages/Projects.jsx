@@ -27,6 +27,7 @@ function Project({ name, description, skills, link }) {
       </div>
     </div>
   );
+}
 
 function Projects() {
   const projects = [
