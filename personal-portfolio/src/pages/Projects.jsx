@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Project({ name, description, skills, url, link }) {
   return (
-    <div className="text-white bg-[#FCC1C1] p-5 rounded-md m-1 mb-5 md:m-10 w-auto">
+    <div className="text-white bg-[#FCC1C1] p-5 rounded-md m-1 mb-5 md:m-10 w-auto hover:border-2 hover:border-[#C72D2D]">
       <div className="flex flex-col md:flex-row md:justify-between items-start mb-4">
         <h1 className="text-xl md:text-2xl underline mb-4 md:mb-0">{name}</h1>
         <ul className="flex flex-wrap gap-2 md:gap-5">
@@ -19,12 +19,12 @@ function Project({ name, description, skills, url, link }) {
 
       <p className="text-md md:text-xl text-left mb-4">* {description}</p>
       <div className="flex justify-between items-center">
-        <a href={url} target="_blank" rel="noreferrer" className="text-[#C72D2D] hover:text-white underline">
+        <a href={url} target="_blank" rel="noreferrer" className="text-[#C72D2D] hover:text-white underline transition-all duration-300 ease-in-out">
           Project Link
         </a>
         <Link
           to={link}
-          className="text-[#C72D2D] hover:text-white hover:underline"
+          className="text-[#C72D2D] hover:text-white hover:underline transition-all duration-300 ease-in-out"
         >
           Learn More
         </Link>

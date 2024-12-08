@@ -2,14 +2,14 @@ function Contact() {
   return (
     <div>
       <div className="rounded-md md:m-10 w-auto">
-        <form className="bg-white p-7 md:p-10 rounded-md">
+        <form className="bg-white p-7 md:p-10 rounded-md border-[#C72D2D] border-2">
         <div className="flex flex-col md:flex-row md:space-x-4 mb-4">
           <input type="text" id="name" name="name" className="w-full p-2 mb-4 bg-[#FF9494] placeholder-white rounded-sm text-xl" placeholder="First Name" required />
           <input type="text" id="name" name="name" className="w-full p-2 mb-4 bg-[#FF9494] placeholder-white rounded-sm text-xl" placeholder="Last Name" required />
           <input type="email" id="email" name="email" className="w-full p-2 mb-4 bg-[#FF9494] placeholder-white rounded-sm text-xl" placeholder="Email" required />
         </div>
           <textarea id="message" name="message" className="w-full p-2 mb-4 bg-[#FF9494] placeholder-white rounded-sm text-xl h-64" placeholder="Your Message" required></textarea>
-          <button type="submit" className="bg-[#C72D2D] text-white p-4 rounded-lg text-md md:text-xl">Submit</button>
+          <button type="submit" className="bg-[#C72D2D] text-white p-4 rounded-lg text-md md:text-xl hover:text-[#C72D2D] hover:bg-white transition-all duration-300 ease-in-out hover:border-[#C72D2D] border-2">Submit</button>
         </form>
       </div>
     </div>
