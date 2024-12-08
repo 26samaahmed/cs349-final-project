@@ -2,7 +2,7 @@ import Resume from '../assets/Sama_Ahmed_2024_Resume.pdf';
 
 function About() {
   return (
-    <div className="text-[#C72D2D] text-left bg-[#FCC1C1] bg-opacity-100 p-10 rounded-md m-10">
+    <div className="text-white text-left bg-opacity-100 rounded-md m-10">
       <p className="text-2xl mb-10">I’m Sama, an Egyptian-American student currently in my third year, set to graduate in Spring 2026. 
         I moved to the U.S. five years ago, and though I started college with no coding experience, 
         I quickly developed a passion for technology through involvement in clubs like ACM. 
@@ -10,7 +10,7 @@ function About() {
         and I’m always eager to learn and explore new areas in tech</p>
 
       {/* link resume */}
-      <p className='text-2xl text-right font-medium'><a href={Resume} target="_blank" rel="noreferrer" className='text-white underline'>Check my Resume Here</a></p>
+      <p className='text-2xl text-left font-medium'><a href={Resume} target="_blank" rel="noreferrer" className='text-white underline'>Check my Resume Here</a></p>
     </div>
   );
 }
@@ -57,8 +57,8 @@ function Main(){
   return (
     <div>
       <About />
+      <hr className='w-3/4 m-auto mt-10 mb-10 opacity-70'/>
       <Interests />
-      {/*Add a faint line to seperate the sections*/}
       <hr className='w-3/4 m-auto mt-10 mb-10 opacity-70'/>
       <Skills />
     </div>
