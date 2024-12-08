@@ -12,15 +12,18 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="min-h-screen flex flex-col">
+        {/* Navbar at the top */}
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:projectId" element={<ProjectDetails />} /> {/* Dynamic route */}
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
+        <main className="flex-1 mt-16">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:projectId" element={<ProjectDetails />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

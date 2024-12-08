@@ -7,33 +7,39 @@ import project2Img1 from '../assets/project2_1.png';
 import project2Img2 from '../assets/project2_2.png';
 import project2Img3 from '../assets/project2_3.png';
 import project2Img4 from '../assets/project2_4.png';
-
+import project3Img1 from '../assets/project3_1.png';
+import project3Img2 from '../assets/project3_2.png';
+import project3Img3 from '../assets/project3_3.png';
+import project3Img4 from '../assets/project3_4.png';
 
 
 const projectData = {
   acmcsuf: {
     name: 'acmcsuf.com',
-    description: 'A website for the Association for Computing Machinery at CSUF...',
-    challenges: 'The site was built using SvelteKit, which was a new framework for me...',
-    outcome: 'I learned a lot about SvelteKit and TypeScript...',
+    description: 'A website for the Association for Computing Machinery at California State University, Fullerton with 50+ contributers that shows information about the club, events, and resources.',
+    challenges: 'It was my first time being a project manager for such a big project that had 60+ contributers. My knowledge of SvelteKit and TypeScript was limited so I had to learn a lot during the summer to be able to lead the project and help more students contribute to the project',
+    outcome: 'I learned a lot a lot more about SvelteKit and TypeScript and how to manage my time with setting up meetings and helping students contribute to the project. ',
     skills: ['SvelteKit', 'TypeScript'],
+    url: 'https://acmcsuf.com',
     screenshots: [project1Img1, project1Img2, project1Img3, project1Img4],
   },
   fullybeyond: {
     name: 'FullyBeyond',
-    description: 'CSUF\'s first student-led designathon...',
-    challenges: 'The site was built using SvelteKit, which was a new framework for me...',
-    outcome: 'I learned a lot about SvelteKit and TypeScript...',
+    description: 'A website for CSUF\'s first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members.',
+    challenges: 'This was the first project I worked on using SvelteKit and TailwindCSS. I volunteered to lead a team of 4 people to build the website for the event and we spent all summer working on it. It was sometimes hard to lead because I was still learning the technologies myself.',
+    outcome: 'I learned that Tailwind makes styling websites so much easier and how to efficiently manage the team to get the project done on time.',
     skills: ['SvelteKit', 'TailwindCSS'],
+    url: 'https://fullybeyond.acmcsuf.com',
     screenshots: [project2Img1, project2Img2, project2Img3, project2Img4],
   },
   concerttracker: {
     name: 'Concert Tracker',
-    description: 'Search for concerts by city and month...',
-    challenges: 'The site was built using SvelteKit, which was a new framework for me...',
-    outcome: 'I learned a lot about SvelteKit and TypeScript...',
-    skills: ['SvelteKit', 'HTML/CSS', 'TicketMaster API'],
-    screenshots: [],
+    description: 'A website where users can search for concerts by city name and month and see the upcoming concerts in that city.',
+    challenges: 'This was my second personal project which I used to learn about SvelteKit and how to use APIs. I started the project in May and it took me a few months to understand how to use APIs especially the TicketMaster API. It was a lot of trial and error to get the data to display correctly.',
+    outcome: 'I learned how to use APIs and how to display the data on the website in a way that was easy to read and understand. I also learned how to use SvelteKit to create a website that was fast and responsive.',
+    skills: ['SvelteKit', 'TicketMaster API'],
+    url: 'https://concert-tracker.vercel.app/',
+    screenshots: [project3Img1, project3Img2, project3Img3, project3Img4],
   },
 };
 
@@ -59,13 +65,16 @@ function ProjectDetails() {
       <p className="text-xl mb-4"><span className="font-semibold underline">Description</span>: {project.description}</p>
       <p className="text-lg mb-4"><span className="font-semibold underline">Challenges</span>: {project.challenges}</p>
       <p className="text-lg mb-4"><span className="font-semibold underline">Outcome</span>: {project.outcome}</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="text-lg mb-4">
+        <a href={project.url} target="_blank" rel="noreferrer" className="font-semibold underline text-[#C72D2D]">Click here for Project Link</a>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
         {project.screenshots.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`${project.name} screenshot ${index + 1}`}
-            className="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"
+            className="rounded-md mb-5 h-full w-full object-cover"
           />
         ))}
       </div>
