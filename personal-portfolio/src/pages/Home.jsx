@@ -1,4 +1,4 @@
-import icon from '../assets/icon.jpeg';
+import icon from '/icon.jpeg';
 
 function Home() {
   return (

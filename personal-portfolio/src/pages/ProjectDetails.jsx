@@ -66,7 +66,7 @@ function ProjectDetails() {
       <p className="text-sm md:text-lg mb-4"><span className="font-semibold underline">Challenges</span>: {project.challenges}</p>
       <p className="text-sm md:text-lg mb-4"><span className="font-semibold underline">Outcome</span>: {project.outcome}</p>
       <div className="text-sm md:text-lg mb-4">
-        <a href={project.url} target="_blank" rel="noreferrer" className="font-semibold underline text-[#C72D2D]">Project Link</a>
+        <a href={project.url} target="_blank" rel="noreferrer" className="font-semibold text-[#C72D2D] hover:text-white underline transition-all duration-300 ease-in-out">Project Link</a>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
         {project.screenshots.map((src, index) => (
@@ -77,6 +77,9 @@ function ProjectDetails() {
             className="rounded-md mb-5 h-full w-full object-cover"
           />
         ))}
+      </div>
+      <div className="mt-4 text-right">
+        <a href="/projects" className="text-sm md:text-lg text-[#C72D2D] hover:text-white underline transition-all duration-300 ease-in-out">Return to project page</a>
       </div>
     </div>
   );
