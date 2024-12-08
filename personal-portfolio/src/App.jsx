@@ -6,8 +6,8 @@ import Home from './pages/Home';
 import AboutPage from './pages/About';
 import ProjectsPage from './pages/Projects';
 import ContactPage from './pages/Contact';
+import ProjectDetails from './pages/ProjectDetails';
 import Footer from './components/Footer';
-
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:projectId" element={<ProjectDetails />} /> {/* Dynamic route */}
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
