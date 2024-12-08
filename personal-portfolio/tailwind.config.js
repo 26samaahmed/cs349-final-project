@@ -1,5 +1,5 @@
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'], // Ensure this matches the location of your components
+export default {
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
       fontFamily: {
@@ -8,4 +8,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
