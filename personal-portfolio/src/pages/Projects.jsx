@@ -18,7 +18,7 @@ function Project({ name, description, skills, url, link }) {
       </div>
       <p className="text-xl text-left mb-4">* {description}</p>
       <div className="flex justify-between items-center">
-        <a href={url} target="_blank" rel="noreferrer" className="text-[#C72D2D] underline">Project Link</a>
+        <a href={url} target="_blank" rel="noreferrer" className="text-[#C72D2D] hover:text-white underline">Project Link</a>
         <Link 
           to={link} 
           className="text-[#C72D2D] hover:text-white hover:underline"

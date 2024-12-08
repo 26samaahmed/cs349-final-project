@@ -10,7 +10,7 @@ function About() {
         and I’m always eager to learn and explore new areas in tech</p>
 
       {/* link resume */}
-      <p className='text-2xl text-left font-medium'><a href={Resume} target="_blank" rel="noreferrer" className='text-white underline'>Check my Resume Here</a></p>
+      <p className='text-2xl text-left font-medium'><a href={Resume} target="_blank" rel="noreferrer" className='text-white hover:text-[#C72D2D] underline'>Check my Resume Here</a></p>
     </div>
   );
 }
