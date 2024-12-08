@@ -2,7 +2,7 @@ import icon from '../assets/icon.jpeg';
 
 function Home() {
   return (
-    <div className="flex items-center text-[#C72D2D] text-left w-full">
+    <div className="flex items-center text-[#C72D2D] text-left w-full m-10">
       <div className="w-2/3">
         <h1 className="text-5xl mb-10">Hello, I'm Sama Ahmed</h1>
         <p className="text-2xl">

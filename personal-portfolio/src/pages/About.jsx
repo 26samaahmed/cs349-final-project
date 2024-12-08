@@ -2,8 +2,7 @@ import Resume from '../assets/Sama_Ahmed_2024_Resume.pdf';
 
 function About() {
   return (
-    <div className="text-[#C72D2D] text-left bg-[#FCC1C1] opacity-65 p-10 rounded-md">
-      <h1 className="text-4xl underline mb-10">About Me</h1>
+    <div className="text-[#C72D2D] text-left bg-[#FCC1C1] bg-opacity-100 p-10 rounded-md m-10">
       <p className="text-2xl mb-10">I’m Sama, an Egyptian-American student currently in my third year, set to graduate in Spring 2026. 
         I moved to the U.S. five years ago, and though I started college with no coding experience, 
         I quickly developed a passion for technology through involvement in clubs like ACM. 
@@ -11,7 +10,7 @@ function About() {
         and I’m always eager to learn and explore new areas in tech</p>
 
       {/* link resume */}
-      <p className='text-2xl text-right font-medium'>Check my Resume <a href={Resume} target="_blank" rel="noreferrer" className='text-white underline'>Here</a></p>
+      <p className='text-2xl text-right font-medium'><a href={Resume} target="_blank" rel="noreferrer" className='text-white underline'>Check my Resume Here</a></p>
     </div>
   );
 }
@@ -20,7 +19,7 @@ function Interests() {
   const interests = [ 'Web Development', 'UI/UX Design', 'Web Design'];
   return (
     <div className='m-10'>
-      <h1 className="text-4xl underline mb-10 text-left text-[#C72D2D]">Interests</h1>
+      <h1 className="text-3xl underline mb-10 text-left text-[#C72D2D]">Interests</h1>
       <ul className="flex flex-wrap gap-5 text-2xl">
         {interests.map((interest, index) => (
           <li
@@ -39,7 +38,7 @@ function Skills() {
   const skills = ['HTML/CSS', 'JavaScript', 'React', 'Svelte/SvelteKit', 'Python', 'Flask', 'C/C++', 'Git', 'Figma'];
   return (
     <div className='m-10'>
-      <h1 className="text-4xl underline mb-10 text-left text-[#C72D2D]">Skills</h1>
+      <h1 className="text-3xl underline mb-10 text-left text-[#C72D2D]">Skills</h1>
       <ul className="flex flex-wrap gap-5 text-2xl">
         {skills.map((skill, index) => (
           <li

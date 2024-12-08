@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Project({ name, description, skills, link }) { 
   return (
     <div className="text-white bg-[#FCC1C1] bg-opacity-100 p-5 rounded-md m-10 w-auto">
@@ -16,11 +18,15 @@ function Project({ name, description, skills, link }) {
       </div>
       <p className="text-xl text-left mb-4">{description}</p>
       <div className="text-right">
-        <a href={link} className="text-[#C72D2D] underline">Check more about the project here</a>
+        <Link 
+          to={link}
+          className="text-[#C72D2D] underline"
+        >
+          Learn More
+        </Link>
       </div>
     </div>
   );
-}
 
 function Projects() {
   const projects = [
@@ -45,7 +51,6 @@ function Projects() {
   ]
   return (
     <div>
-      <h1 className="text-4xl underline m-10 text-left text-[#C72D2D]">Projects</h1>
       {projects.map((project, index) => (
         <Project key={index} name={project.name} description={project.description} skills={project.skills} link={project.link} />
       ))}
