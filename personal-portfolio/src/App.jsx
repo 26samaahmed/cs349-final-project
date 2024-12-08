@@ -13,9 +13,8 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
-        {/* Navbar at the top */}
         <Navbar />
-        <main className="flex-1 mt-16">
+        <main className="flex-1 mt-8 md:mt-16">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />

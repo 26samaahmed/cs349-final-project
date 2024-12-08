@@ -9,8 +9,8 @@ const navItems = [
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-center text-3xl">
-      <div className="flex space-x-12">
+    <nav className="flex items-center justify-center text-md sm:text-3xl">
+      <div className="flex space-x-7 md:space-x-12">
         {navItems.map((item, index) => (
           <div key={index}>
               <Link 
